@@ -1,0 +1,17 @@
+[package]
+name = "server"
+version = "0.1.0"
+authors = ["Lucille Blumire <llblumire@gmail.com>"]
+edition = "2018"
+
+[dependencies.rocket]
+version = "*"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["mysql_pool", "json", "serve"]
+
+[dependencies.serde]
+version = "1.0.81"
+features = ["derive"]

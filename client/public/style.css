@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto 0;
+}
+
+#logo {
+    width: 100%;
+    height: 200px;
+}
+
+#nav {
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav a {
+    display: block;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 1em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+#nav a:hover {
+    background-color: #eeeeee;
+}
+
+#nav a.router-link-exact-active {
+    font-weight: 800;
+}
+
+#nav a:not(:first-child) {
+    border-left: 1px solid black;
+}
+
+.home #food-query {
+    display: flex;
+}
+
+.home #food-query>* {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 1em;
+}
+
+.home .food-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .food-search label {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.home .food-search #food-search {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em;
+    font-size: 1.25em;
+}
+
+.food-infobox {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 1em;
+}
+
+.food-infobox .long-desc, .food-infobox .long-desc input[type=text] {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.food-infobox .long-desc input[type=number] {
+    font-weight: bold;
+    width: 5em;
+}
+
+.food-infobox .short-desc {
+    font-size: 1.25em;
+}
+
+.food-infobox .record {
+    display: flex;
+    justify-content: center;
+}
+
+.food-infobox .record>* {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 0.5em;
+}
+
+.food-infobox .long-desc .grams {
+    display: inline-block;
+}
+
+.food-infobox .record .record-type {
+    text-align: right;
+}
+
+.food-infobox .record .record-value input[type=number] {
+    width: 4em;
+}
+
+.food-infobox form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0 0 0;
+}
+
+header #hero {
+    display: flex;
+}
+
+header #hero>* {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+header #hero #logo {
+    background-image: url('/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 2em 0;
+}
+
+header #hero #hero-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header #hero #hero-right a {
+    padding: 1em;
+    border: 1px solid black;
+    text-decoration: none;
+    color: #000000;
+}
+
+header #hero #hero-right a:hover {
+    background-color: #eeeeee;
+}
+
+.status {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.status .column {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 1em;
+}
+
+.status #selectDate {
+    padding: 1em;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.login form input {
+    margin: 0.5em;
+    font-size: 1.5em;
+}
