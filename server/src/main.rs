@@ -129,7 +129,6 @@ fn api_food_by_id(mut conn: HciDataConn, id: i64) -> Result<Json<FoodInfo>, Stat
 fn main() {
     rocket::ignite()
         .attach(HciDataConn::fairing())
-        .mount("/", StaticFiles::from(std::env::args().nth(1).unwrap()))
         .mount("/api", routes![api_foods, api_food_by_id])
         .launch();
 }

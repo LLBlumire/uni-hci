@@ -1,2 +1,5 @@
+[production]
+port = 50839
+
 [global.databases]
 hcidata = { url = "mysql://hci:ethuchalta@localhost:3306/hcidata" }
