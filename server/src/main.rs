@@ -1,12 +1,10 @@
 #![feature(decl_macro, proc_macro_hygiene)]
 
-use std::ops::Deref;
 use std::collections::HashMap;
 
 use rocket::routes;
 use rocket::get;
 use rocket::http::Status;
-use rocket_contrib::serve::StaticFiles;
 use rocket_contrib::json::Json;
 use rocket_contrib::database;
 use rocket_contrib::databases::mysql;
